@@ -363,4 +363,27 @@ class AbstractAddressTest extends \PHPUnit_Framework_TestCase
             'validated' => [array_merge($data, ['country_id' => $countryId++]), true],
         ];
     }
+
+    /**
+     * @dataProvider getStreetFullDataProvider
+     */
+    public function testSetDataStreetAlwaysConvertedToString($expectedResult, $street)
+    {
+        $this->model->setData('street', $street);
+        $this->assertEquals($expectedResult, $this->model->getData('street'));
+    }
+
+    /**
+     * @return array
+     */
+    public function getStreetFullDataProvider()
+    {
+        return [
+            [null, null],
+            ['', []],
+            ["first line\nsecond line", ['first line', 'second line']],
+            ['single line', ['single line']],
+            ['single line', 'single line'],
+        ];
+    }
 }
