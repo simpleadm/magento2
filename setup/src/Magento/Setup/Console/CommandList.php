@@ -57,6 +57,7 @@ class CommandList
             \Magento\Setup\Console\Command\I18nPackCommand::class,
             \Magento\Setup\Console\Command\InfoAdminUriCommand::class,
             \Magento\Setup\Console\Command\InfoBackupsListCommand::class,
+            \Magento\Setup\Console\Command\InfoCronListCommand::class,
             \Magento\Setup\Console\Command\InfoCurrencyListCommand::class,
             \Magento\Setup\Console\Command\InfoLanguageListCommand::class,
             \Magento\Setup\Console\Command\InfoTimezoneListCommand::class,
