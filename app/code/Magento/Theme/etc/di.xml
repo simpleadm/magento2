@@ -278,7 +278,6 @@
         <arguments>
             <argument name="mainTable" xsi:type="string">theme</argument>
             <argument name="resourceModel" xsi:type="string">Magento\Theme\Model\ResourceModel\Theme</argument>
-            <argument name="identifierName" xsi:type="string">theme_id</argument>
         </arguments>
     </type>
 </config>
