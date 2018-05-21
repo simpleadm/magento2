@@ -22,7 +22,7 @@
             <updateUrl path="mui/index/render"/>
         </settings>
         <aclResource>Magento_Theme::theme</aclResource>
-        <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="design_theme_listing_data_source">
+        <dataProvider class="Magento\Theme\Ui\Component\Theme\DataProvider" name="design_theme_listing_data_source">
             <settings>
                 <requestFieldName>id</requestFieldName>
                 <primaryFieldName>theme_id</primaryFieldName>
